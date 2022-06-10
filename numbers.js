@@ -103,3 +103,5 @@ function arrayNUglyNumbers(n){
 
     return uglyNumbers;
 }
+
+module.exports = {isPrime, arrayNUglyNumbers, primeFactors}
