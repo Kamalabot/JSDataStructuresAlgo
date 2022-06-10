@@ -24,3 +24,33 @@ function scope3(print){
 
 }
 scope3(true);
+
+function scopeLet(print){
+    if(print){
+        let insideLet='78';
+    }
+    //console.log(insideLet);
+}
+
+scopeLet(true) //throws error
+
+var is20 = false;
+console.log(typeof is20);
+
+var age = 19;
+console.log(typeof age);
+
+var me = {firstName:"Bot",lastName:"Solver"};
+console.log(typeof me);
+
+var nullVar = null;
+console.log(typeof nullVar);
+
+var fdn = function(){
+    console.log(56);
+}
+console.log(typeof fdn);
+
+//guess what will be the output
+
+console.log("5" === 5)
