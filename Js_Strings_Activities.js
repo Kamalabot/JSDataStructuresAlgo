@@ -21,7 +21,7 @@ console.log(existsInString('redea','b')) // returns false
 
 //You can use an additional parameter to search after a certain index in a string.
 
-var str = "He is the king from this day until he has last breath";
+var str = 'He is the king from this day until he has last breath';
 
 var count = 0;
 
@@ -43,7 +43,7 @@ console.log(test1.split(','));
 var test2 = 'chicken';
 console.log(test2.split(''));
 
-var temp = "Wisard of Aon".replace("of", "in");
+var temp = 'Wisard of Aon'.replace('of', 'in');
 console.log(temp);
 
 /*
@@ -65,20 +65,20 @@ m Perform multiline matching
 */
 
 
-var str = "JavaScript DataStructures";
+var str = 'JavaScript DataStructures';
 
 console.log(str.match(/a/g));
 
 //URL parsing 
 
-var url_re = "([^?=&]+)(=([^&]*))?";
+var url_re = '([^?=&]+)(=([^&]*))?';
 
 var uri = 'http://your.domain/product.aspx?category=4&product_id=2140&query=lcd+tv'
 
 var queryString = {};
 
 uri.replace(
-    new RegExp(url_re, "g"), function($0, $1, $2, $3){
+    new RegExp(url_re, 'g'), function($0, $1, $2, $3){
         queryString[$1] = $3;
     }
 );
@@ -94,11 +94,11 @@ var atob = Buffer.from(btoa,'base64').toString();
 
 console.log(atob);
 
-var DICTIONARY = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("");
+var DICTIONARY = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
 
 function encodeId(num){
     var base = DICTIONARY.length;
-    var encoded = "";
+    var encoded = '';
 
     if (num === 0){
         return DICTIONARY[0];
@@ -112,7 +112,7 @@ function encodeId(num){
 }
 //below function reverses the string
 function reverseWord(str){
-    var reversed = "";
+    var reversed = '';
     for (var i = str.length - 1; i >= 0; i--){
         reversed += str.charAt(i);
     }
@@ -125,7 +125,7 @@ function decodeId(id){
     var base = DICTIONARY.length;
     var decoded = 0;
 
-    for (var index = 0; index < id.split("").length; index++){
+    for (var index = 0; index < id.split('').length; index++){
         decoded = decoded * base + DICTIONARY.indexOf(id.charAt(index));
     }
     
